@@ -16,9 +16,14 @@ MQL4で価格をいい感じに変換するためのモジュール
 小数点以下の桁数が5桁の場合、1ポイントは0.00001
 
 
+## Requirement
+- [MQL4-Assert](https://github.com/KeisukeIwabuchi/MQL4-Assert)
+- [MQL4-Env](https://github.com/KeisukeIwabuchi/MQL4-Env)
+
+
 ## Install
-1. download Price.mqh
-2. /MQL4/Include/配下に保存する
+1. Price.mqhをダウンロード
+2. データフォルダを開き、/MQL4/Includes/mql4_modules/Price/Price.mqhとして保存
 
 
 ## Usage
