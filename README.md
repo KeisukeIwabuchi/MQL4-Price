@@ -6,12 +6,12 @@ MQL4で価格をいい感じに変換するためのモジュール
 価格、pips単位の値、point単位の値を相互に変換するモジュール。  
 
 ### pips
-1pipsの計算は以下の通り。
-小数点以下の桁数が2桁または3桁の通貨ペア（ドル円など）の場合0.01
+1pipsの計算は以下の通り。  
+小数点以下の桁数が2桁または3桁の通貨ペア（ドル円など）の場合0.01  
 小数点以下の桁数が4桁または5桁の通貨ペア（ユーロドルなど）の場合0.0001
 
 ### point
-1ポイントの計算は以下の通り。
+1ポイントの計算は以下の通り。  
 小数点以下の桁数が3桁の場合、1ポイントは0.001  
 小数点以下の桁数が5桁の場合、1ポイントは0.00001
 
@@ -22,12 +22,12 @@ MQL4で価格をいい感じに変換するためのモジュール
 
 
 ## Install
-1. Price.mqhをダウンロード
-2. データフォルダを開き、/MQL4/Includes/mql4_modules/Price/Price.mqhとして保存
+1. Download Price.mqh
+2. Save the file to /MQL4/Includes/mql4_modules/Price/Price.mqh
 
 
 ## Usage
-Benchmark.mqhを読み込んで使用する。  
+Price.mqhを読み込んで使用する。  
 
 ### PipsToPoint
 pips単位の値をpoint単位へ変換  
