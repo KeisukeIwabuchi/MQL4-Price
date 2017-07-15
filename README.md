@@ -1,19 +1,19 @@
 # MQL4-Price
-MQL4で価格をいい感じに変換するためのモジュール
+Convert unit of price.
 
 
 ## Description
-価格、pips単位の値、point単位の値を相互に変換するモジュール。  
+A module that mutually converts price, value of pips unit, value of point unit.
 
 ### pips
-1pipsの計算は以下の通り。  
-小数点以下の桁数が2桁または3桁の通貨ペア（ドル円など）の場合0.01  
-小数点以下の桁数が4桁または5桁の通貨ペア（ユーロドルなど）の場合0.0001
+The calculation of 1 pips is as follows.  
+When currency pair with two or three digits after the decimal point (dollar circle, etc.) 0.01  
+When currency pair with 4 or 5 digits after the decimal point (euro doll etc.) 0.0001
 
 ### point
-1ポイントの計算は以下の通り。  
-小数点以下の桁数が3桁の場合、1ポイントは0.001  
-小数点以下の桁数が5桁の場合、1ポイントは0.00001
+The calculation of 1 point is as follows.
+If the number of digits after the decimal point is 3 digits, 1 point is 0.001
+If the number of digits after the decimal point is 5 digits, 1 point is 0.00001
 
 
 ## Requirement
@@ -27,27 +27,27 @@ MQL4で価格をいい感じに変換するためのモジュール
 
 
 ## Usage
-Price.mqhを読み込んで使用する。  
+Include Price.mqh and use the method.
 
 ### PipsToPoint
-pips単位の値をpoint単位へ変換  
+Convert pips unit value to point unit value.
 
 ### PipsToPrice
-pips単位の値を価格へ変換  
+Convert pips unit value to price unit value.
 
 ### PointToPips
-point単位の値をpips単位へ変換  
+Convert point unit value to pips unit value.
 
 ### PointToPrice
-point単位の値を価格へ変換  
+Covert point unit value to price unit value.
 
 ### PriceToPips
-価格をpips単位へ変換  
+Convert price unit value to pips unit value.
 
 ### PriceToPoint
-価格をpoint単位へ変換  
+Convert price unit value to point unit value.
 
-### setMult, getMult
-デフォルトの設定では小数点以下2～5桁以外の通貨/シンボルで変換をおこなう場合、正しく変換できない可能性がある。  
-その場合はsetMultメソッドを使用して計算に使用している内部変数multを調整することができます。  
-現在のmultの値を知りたい場合は、getMultで値を得ることが可能です。  
+### setScale, getScale
+In the default setting, when converting with currency / symbol other than 2 to 5 digits after the decimal point, conversion may not be performed correctly.
+In that case, you can use the setScale method to adjust the internal variable mult used for calculation.
+If you want to know the current value of scale, you can get the value with getScale. 
