@@ -23,7 +23,7 @@ If the number of digits after the decimal point is 5 digits, 1 point is 0.00001
 
 ## Install
 1. Download Price.mqh
-2. Save the file to /MQL4/Includes/mql4_modules/Price/Price.mqh
+2. Save the file to /MQL4/Include/mql4_modules/Price/Price.mqh
 
 
 ## Usage
